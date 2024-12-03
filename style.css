@@ -1248,6 +1248,9 @@ tbody tr td button:hover{
     .admin-select i{
         display: none;
     }
+    .drop-menu{
+        left: -60px;
+    }
     .mega-menu{
         display: none;
     }
