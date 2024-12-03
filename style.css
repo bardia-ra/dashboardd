@@ -1236,6 +1236,12 @@ tbody tr td button:hover{
     .admin{
         height: 30px;
     }
+    .admin-detail p{
+        display: none;
+    }
+    .admin-detail i{
+        display: none;
+    }
     .admin-select p{
         display: none;
     }
