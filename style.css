@@ -135,21 +135,76 @@ ul{
 .usa-parent img{
     height: 100%;
 }
-.admin{
+.dropdown{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    /* width: 80px; */
+    height: 100%;
+}
+.drop-menu{
+    display: none;
+    /* display: flex; */
+    position: absolute;
+    top: 70px;
+    left: -30px;
+    background-color: #fff;
+    border: 1px #f1f1f1 solid;
+    border-radius: 5px;
+    z-index: 1000;
+    width: 150px;
+    padding: 0 7px;
+}
+.drop-menu a{
+    display: block;
+    padding: 10px 20px;
+    color: var(--light-gray-text);
+    text-decoration: none;
+    text-align: left;
+    font-size: 13px;
+}
+.drop-menu a i{
+    margin-right: 8px;
+    color: var(--light-gray-text);
+}
+.drop-menu a:hover{
+    background-color: #f5f8fd;
+    color: #000;
+}
+.dropdown.active .drop-menu{
+    display: block;
+}
+
+
+.admin-detail{
     display: flex;
     gap: 7px;
     height: 40px;
     align-items: center;
     color: var(--light-gray-text);
+    cursor: pointer;
 }
-.admin img{
+.admin-detail img{
     height: 100%;
     border-radius: 50%;
 }
-.admin p{
+.admin-detail p{
     color: var(--light-gray-text);
     font-size: 13px;
 }
+
+
+#logout{
+    height: 50px;
+    border-top: #f1f1f1 1px solid;
+    display: flex;
+    align-items: center;
+}
+#logout i{
+    color: red;
+}
+
 .bell{
     display: flex;
     flex-direction: column;
@@ -1069,6 +1124,7 @@ tbody tr td button:hover{
     align-items: center;
     font-size: 13px;
     justify-content: space-between;
+    cursor: pointer;
 }
 .menu-left{
     display: flex;
@@ -1180,10 +1236,10 @@ tbody tr td button:hover{
     .admin{
         height: 30px;
     }
-    .admin p{
+    .admin-select p{
         display: none;
     }
-    .admin i{
+    .admin-select i{
         display: none;
     }
     .mega-menu{
@@ -1309,11 +1365,11 @@ tbody tr td button:hover{
         width: 50%;
     }
     .profile-img{
-        height: 80%;
-        width: 56%;
+        height: 75%;
+        width: 45%;
     }
     .profile-img img{
-        width: 80%;
+        width: 90%;
     }
     .bottom-right{
         width: 100%;
