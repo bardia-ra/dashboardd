@@ -11,7 +11,99 @@
     
 </head>
 <body>
-    <main>
+  <div class="popup">
+    <div class="close-btn">
+      <button id="close-btn" onclick="btnn()">
+        &times;
+      </button>
+    </div>
+    <div class="pop-main">
+      <div class="pop-top">
+        <div class="pop-circle">
+          <i class="fa-solid fa-envelope-open"></i>
+        </div>
+        <h2>Subscribe !</h2>
+      </div>
+      <div class="pop-mid">
+        <p>Subscribe our newletter and get notification to stay update.</p>
+      </div>
+      <div class="pop-bottom">
+        <input type="text" placeholder="Enter Email address">
+        <div class="pop-button">
+          <input type="submit" value="">
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <li id="set" class="setting">
+    <i class="fa-solid fa-gear fa-spin fa-lg"></i>
+    <div class="set-menu">
+      <div class="set-title">
+        <h2>Setting</h2>
+        <button id="close-btnn">
+          <i class="close-btn fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+      <div class="set-option">
+        <h3>Layout</h3>
+        <div class="set-item">
+          <button class="set-butt-1">Vertical</button>
+          <button class="set-butt-2">Horizontal</button>
+        </div>
+      </div>
+      <div class="set-option">
+        <h3>Layout Mode</h3>
+        <div class="set-item">
+          <button class="set-butt-1">Light</button>
+          <button class="set-butt-2">Dark</button>
+        </div>
+      </div>
+      <div class="set-option">
+        <h3>Layout Width</h3>
+        <div class="set-item">
+          <button class="set-butt-1">Fluid</button>
+          <button class="set-butt-2">Boxed</button>
+          <button class="set-butt-3">Scrollable</button>
+        </div>
+      </div>
+      <div class="set-option">
+        <h3>Topbar Theme</h3>
+        <div class="set-item">
+          <button class="set-butt-1">Light</button>
+          <button class="set-butt-2">Dark</button>
+        </div>
+      </div>
+      <div class="set-option">
+        <h3>Left Sidebar Options</h3>
+        <div class="set-item">
+          <button class="set-butt-1">Default</button>
+          <button class="set-butt-2">Compact</button>
+          <button class="set-butt-3">icon</button>
+        </div>
+      </div>
+      <div class="set-option">
+        <h3>Left Sidebar Color Option</h3>
+        <div class="set-color">
+          <div class="circle-parent set-item-top">
+            <div id="circle-1" class="color-circle"></div>
+            <div id="circle-2" class="color-circle"><div class="check"><i class="fa-solid fa-check"></i></div></div>
+            <div id="circle-3" class="color-circle"></div>
+          </div>
+          <div class="circle-parent set-item-bottom">
+            <div id="circle-4" class="color-circle"></div>
+            <div id="circle-5" class="color-circle"></div>
+            <div id="circle-6" class="color-circle"></div>
+            <div id="circle-7" class="color-circle"></div>
+            <div id="circle-8" class="color-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</li>
+  
+    <main id="main-blur">
         <div class="left">
           <div class="left-logo">
             <img src="img/left-logo.png" alt="">
@@ -35,21 +127,21 @@
                     <i class="fa-solid fa-calendar-days"></i>
                   <a href="">Calender</a>
                   </div>
-                  <i class="fa-solid fa-angle-down"></i>
+                  
                 </div>
                 <div class="left-col">
                   <div class="apps-left col-l">
                     <i class="fa-solid fa-comments"></i>
                   <a href="">Chat</a>
                   </div>
-                  <i class="fa-solid fa-angle-down"></i>
+                  
                 </div>
                 <div class="left-col">
                   <div class="apps-left col-l">
                     <i class="fa-solid fa-file-lines"></i>
                   <a href="">File Manager</a>
                   </div>
-                  <i class="fa-solid fa-angle-down"></i>
+                  
                 </div>
                 <div class="left-col">
                   <div class="apps-left col-l">
@@ -203,6 +295,16 @@
                             <input class="search-button" type="submit" value="">
                             <i class="fa-solid fa-magnifying-glass search-icon"></i>
                         </li>
+                        <div class="mobile-search">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          <div class="search-menu">
+                            <div class="search-parent-mobile">
+                              <input class="mobile-bar" type="search" placeholder="Search...">
+                              <input class="mobile-button" type="submit" value="">
+                              <i class="fa-solid fa-magnifying-glass search-icon-mobile"></i>
+                            </div>
+                          </div>
+                        </div>
                         <li class="mega-menu">
                             <p>Mega Menu</p>
                             <i class="fa-solid fa-angle-down"></i>
@@ -214,9 +316,71 @@
                     <ul class="nav-right">
                         <li class="usa-parent">
                             <img src="img/usa.jfif" alt="">
+                            <div class="usa-menu">
+                              <div class="usa-item-parent">
+                                <div class="usa-item">
+                                  <div class="usa-mid">
+                                    <img src="img/region/spain.jpg" alt="">
+                                  <p>Spanish</p>
+                                  </div>
+                                </div>
+                                <div class="usa-item">
+                                  <div class="usa-mid">
+                                    <img src="img/region/germany'.jpg" alt="">
+                                  <p>German</p>
+                                  </div>
+                                </div>
+                                <div class="usa-item">
+                                  <div class="usa-mid">
+                                    <img src="img/region/italy.jpg" alt="">
+                                  <p>Italian</p>
+                                  </div>
+                                </div>
+                                <div class="usa-item">
+                                  <div class="usa-mid">
+                                    <img src="img/region/russ.jpg" alt="">
+                                  <p>Russian</p>
+                                  </div>
+                                </div>
+                                <div class="usa-item">
+                                  <div class="usa-mid">
+                                    <img src="img/usa.jfif" alt="">
+                                  <p>English</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                         </li>
-                        <li class="square">
+                        <li class="barcode">
                             <i class="fa-solid fa-qrcode"></i>
+                            <div class="bar-menu">
+                              <div class="bar-main">
+                                <div class="bar-item">
+                                  <img src="img/bar-menu/github.png" alt="">
+                                  <p>Github</p>
+                                </div>
+                                <div class="bar-item">
+                                  <img src="img/bar-menu/bit.png" alt="">
+                                  <p>Bitbucket</p>
+                                </div>
+                                <div class="bar-item">
+                                  <img src="img/bar-menu/dribble.png" alt="">
+                                  <p>Dribbble</p>
+                                </div>
+                                <div class="bar-item">
+                                  <img src="img/bar-menu/dropbox.png" alt="">
+                                  <p>Dropbox</p>
+                                </div>
+                                <div class="bar-item">
+                                  <img src="img/bar-menu/monkey.png" alt="">
+                                  <p>Mail Chimp</p>
+                                </div>
+                                <div class="bar-item">
+                                  <img src="img/bar-menu/slack.png" alt="">
+                                  <p>Slack</p>
+                                </div>
+                              </div>
+                            </div>
                         </li>
                         <li class="square">
                             <i class="fa-solid fa-expand"></i>
@@ -226,6 +390,95 @@
                                 <p>3</p>
                             </div>
                             <i class="fa-regular fa-bell fa-shake"></i>
+                            <div class="bell-menu">
+                              <div class="bell-top">
+                                <h3>Notification</h3>
+                                <a href="">View All</a>
+                              </div>
+                              <div class="bell-mid">
+                                <div class="notif-card" style="height: 110px;">
+                                  <div class="notif-icon">
+                                    <div class="notif-circle-1">
+                                      <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                  </div>
+                                  <div class="notif-right">
+                                    <div class="notif-title">
+                                      <h3>Your order is placed</h3>
+                                    </div>
+                                    <div class="notif-detail">
+                                      <p>if several language coalesce the grammar</p>
+                                    </div>
+                                    <div class="notif-time">
+                                      <i class="fa-regular fa-clock"></i>
+                                      <p>3 min ago</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="notif-card"  style="height: 80px;">
+                                  <div class="notif-icon">
+                                    <div class="notif-circle">
+                                      <img src="img/avatar-3.2cfd5ba6f0dee8d1d076.jpg" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="notif-right">
+                                    <div class="notif-title">
+                                      <h3>James Lemire</h3>
+                                    </div>
+                                    <div class="notif-detail">
+                                      <p>It will seem like simplified English.</p>
+                                    </div>
+                                    <div class="notif-time">
+                                      <i class="fa-regular fa-clock"></i>
+                                      <p>1 hours ago</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="notif-card" style="height: 110px;">
+                                  <div class="notif-icon" >
+                                    <div class="notif-circle-2">
+                                      <i class="fa-regular fa-circle-check"></i>
+                                    </div>
+                                  </div>
+                                  <div class="notif-right">
+                                    <div class="notif-title">
+                                      <h3>Your item is shipped</h3>
+                                    </div>
+                                    <div class="notif-detail">
+                                      <p>if several language coalesce the grammar</p>
+                                    </div>
+                                    <div class="notif-time">
+                                      <i class="fa-regular fa-clock"></i>
+                                      <p>3 min ago</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="notif-card" style="height: 115px;">
+                                  <div class="notif-icon">
+                                    <div class="notif-circle">
+                                      <img src="img/avatar-4.b23e41d9c09997efbc21.jpg" alt="">
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="notif-right">
+                                    <div class="notif-title">
+                                      <h3>Selena Layfield</h3>
+                                    </div>
+                                    <div class="notif-detail">
+                                      <p>As a skeptical cambridge friend of mine accidental.</p>
+                                    </div>
+                                    <div class="notif-time">
+                                      <i class="fa-regular fa-clock"></i>
+                                      <p>1 hours ago</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="bell-bottom">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <a href="">View More...</a>
+                              </div>
+                            </div>
                         </li>
                         <div class="dropdown">
                             <div class="admin-detail">
@@ -251,9 +504,7 @@
                               </a>
                             </div>
                         </div>
-                        <li class="setting">
-                            <i class="fa-solid fa-gear fa-spin fa-lg"></i>
-                        </li>
+                        
                     </ul>
                 </nav>
             
