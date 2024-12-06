@@ -1831,6 +1831,15 @@ tbody tr td button:hover{
     .admin{
         height: 30px;
     }
+    .setting{
+        right: 0;
+    }
+    .dropdown{
+        margin-left: -10px;
+    }
+    .admin-detail img{
+        height: 80%;
+    }
     .admin-detail p{
         display: none;
     }
@@ -1854,7 +1863,7 @@ tbody tr td button:hover{
     }
     .setting{
         font-size: 15px;
-        margin-right: 5px;
+        /* margin-right: 5px; */
     }
     .main-parent{
         align-items: center;
