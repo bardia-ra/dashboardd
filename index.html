@@ -46,11 +46,13 @@
           <i class="close-btn fa-solid fa-circle-xmark"></i>
         </button>
       </div>
-      <div class="set-option set-option-1">
+      <div class="set-option">
         <h3>Layout</h3>
         <div class="set-item">
           <button class="set-butt-1" id="vertical">Vertical</button>
           <button class="set-butt-2" id="horizontal">Horizontal</button>
+          <button class="set-butt-1" id="vertical-mobile">Vertical</button>
+          <button class="set-butt-2" id="horizontal-mobile">Horizontal</button>
         </div>
       </div>
       <div class="set-option ">
@@ -63,9 +65,9 @@
       <div class="set-option">
         <h3>Layout Width</h3>
         <div class="set-item">
-          <button class="set-butt-1">Fluid</button>
-          <button class="set-butt-2">Boxed</button>
-          <button class="set-butt-3">Scrollable</button>
+          <button class="set-butt-1" id="fluid">Fluid</button>
+          <button class="set-butt-2" id="boxed">Boxed</button>
+          <button class="set-butt-3" id="Scrollable">Scrollable</button>
         </div>
       </div>
       <div class="set-option">
@@ -103,12 +105,12 @@
     </div>
 </li>
   
-    <main id="main-blur">
+    <main class="main" id="main-blur">
       <div class="left-min">
         <div class="min-icon">
-          <img src="img/left-logo-mobile.png" alt="">
+          <img class="img-left" src="img/left-logo-mobile.png" alt="">
         </div>
-        <div class="min-item" style="margin-top: 70px;">
+        <div class="min-item" style="margin-top: 70px;color: white;">
           <i class="fa-duotone fa-solid fa-house-user"></i>
         </div>
         <div class="min-item">
@@ -541,6 +543,9 @@
                       <div class="bar-mobile">
                         <i class="fa-solid fa-bars"></i>
                       </div>
+                      <div class="bar-none">
+                        <i class="fa-solid fa-bars"></i>
+                      </div>
                         <li class="bar">
                             <i class="fa-solid fa-bars"></i>
                         </li>
@@ -810,30 +815,202 @@
                 </nav>
                 <div class="header">
                     <div class="head-parent">
-                      <div class="head-item" style="color: #fff;">
+                      <div class="head-item dash" style="color: #fff;">
                         <i class="fa-duotone fa-solid fa-house-user"></i>
-                        <p style="color: #fff;">Dashboard</p>
+                        <p class="dash-txt" style="color: #fff;">Dashboard</p>
                         <i class="fa-solid fa-angle-down"></i>
+                        <div id="dash-menu">
+                          <div class="d-item">
+                            <a href="">Default</a>
+                          </div>
+                          <div class="d-item">
+                            <a href="">Sass</a>
+                          </div>
+                          <div class="d-item">
+                            <a href="">Crypto</a>
+                          </div>
+                          <div class="d-item">
+                            <a href="">Blog</a>
+                          </div>
+                          <div class="d-item">
+                            <a href="">Jobs</a>
+                          </div>
+                        </div>
                       </div>
-                      <div class="head-item">
+                      <div class="head-item el">
                         <i class="fa-solid fa-circle-half-stroke"></i>
-                        <p>UI Element</p>
+                        <p class="el-txt">UI Element</p>
                         <i class="fa-solid fa-angle-down"></i>
+                        <div id="element-menu">
+                        <div class="el-parent">
+                          <div class="el-side">
+                            <div class="el-item">
+                              <a href="">Alerts</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Buttons</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Cards</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Carousel</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Dropdowns</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Grid</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Images</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Lightbox</a>
+                            </div>
+                          </div>
+                          <div class="el-side">
+                            <div class="el-item">
+                              <a href="">Modals</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Offcanvas</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Range Slider</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Session Timeout</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Progress Bars</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Placeholders</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Tabs & Accordions</a>
+                            </div>
+                          </div>
+                          <div class="el-side">
+                            <div class="el-item">
+                              <a href="">Typography</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Toasts</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Video</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">General</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Color</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Rating</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Notification</a>
+                            </div>
+                            <div class="el-item">
+                              <a href="">Utilities</a>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
                       </div>
-                      <div class="head-item">
+                      <div class="head-item app">
                         <i class="fa-solid fa-qrcode"></i>
-                        <p>Apps</p>
+                        <p class="app-txt">Apps</p>
                         <i class="fa-solid fa-angle-down"></i>
+                        <div class="app-menu">
+                          <div class="app-item">
+                            <a href="">Calendar</a>
+                          </div>
+                          <div class="app-item">
+                            <a href="">Chat</a>
+                          </div>
+                          <div class="app-item">
+                            <a href="">File Managar</a>
+                          </div>
+                          <div class="app-item">
+                            <a href="">Email</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="app-item">
+                            <a href="">Ecommerce</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="app-item">
+                            <a href="">Crypto</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="app-item">
+                            <a href="">Projects</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="app-item">
+                            <a href="">Tasks</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="app-item">
+                            <a href="">Contacts</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="app-item">
+                            <a href="">Blog</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                        </div>
                       </div>
-                      <div class="head-item">
+                      <div class="head-item com">
                         <i class="fa-solid fa-bars-progress"></i>
-                        <p>Components</p>
+                        <p class="com-txt">Components</p>
                         <i class="fa-solid fa-angle-down"></i>
+                        <div class="com-menu">
+                          <div class="com-item">
+                            <a href="">Forms</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="com-item">
+                            <a href="">Tables</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="com-item">
+                            <a href="">Charts</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="com-item">
+                            <a href="">Icons</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="com-item">
+                            <a href="">Maps</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                        </div>
                       </div>
-                      <div class="head-item">
+                      <div class="head-item ex">
                         <i class="fa-solid fa-file-lines"></i>
-                        <p>Extra Pages</p>
+                        <p class="ex-txt">Extra Pages</p>
                         <i class="fa-solid fa-angle-down"></i>
+                        <div class="ex-menu">
+                          <div class="ex-item">
+                            <a href="">Invoices</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="ex-item">
+                            <a href="">Authentication</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                          <div class="ex-item">
+                            <a href="">Utility</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                        </div>
+                        
                       </div>
                     </div>
                 </div>
