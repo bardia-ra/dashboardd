@@ -2471,5 +2471,11 @@ tbody tr td button:hover{
     #vertical{
         display: none;
     }
+    #horizontal-mobile{
+        display: block;
+    }
+    #vertical-mobile{
+        display: block;
+    }
     
 }
