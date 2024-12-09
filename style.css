@@ -219,10 +219,15 @@ ul{
     width: 150px;
     height: 200px;
     background-color: #fff;
-    border: 1px solid #f1f1f1;
+    /* border: 1px solid #f1f1f1; */
+    box-shadow: 0px 0px 20px 20px #00000013;
     border-radius: 6px;
     padding: 5px;
     display: none;
+    animation: usa-animation .6s ease ;
+    transition: all .2s;
+    /* z-index: 9999999999999999999999999999999999999999999999999999999999; */
+    z-index: 999;
 }
 .usa-item-parent{
     width: 100%;
@@ -446,11 +451,20 @@ main#off-blur.active{
     top: 70px;
     left: -30px;
     background-color: #fff;
-    border: 1px #f1f1f1 solid;
+    /* border: 1px #f1f1f1 solid */
+    box-shadow: 0px 0px 20px 20px #00000013;
     border-radius: 5px;
     z-index: 1000;
     width: 150px;
     padding: 0 7px;
+    animation: prof-animation .6s ease ;
+    transition: all .2s;
+    z-index: 999;
+}
+@keyframes prof-animation{
+    from{
+        top: 60px;
+    }
 }
 .drop-menu a{
     display: block;
@@ -540,11 +554,20 @@ main#off-blur.active{
     width: 300px;
     height: 330px;
     background-color: #fff;
-    border: 1px solid #f1f1f1;
+    /* border: 1px solid #f1f1f1; */
+    box-shadow: 0px 0px 20px 20px #00000013;
     border-radius: 6px;
     /* padding: 10px; */
     display: none;
     cursor: auto;
+    animation: bell-animation .6s ease ;
+    transition: all .2s;
+    z-index: 999;
+}
+@keyframes bell-animation{
+    from{
+        top: 68px;
+    }
 }
 .bell-top{
     display: flex;
@@ -700,9 +723,18 @@ main#off-blur.active{
     width: 350px;
     height: 200px;
     background-color: #fff;
-    border: 1px solid #f1f1f1;
+    /* border: 1px solid #f1f1f1; */
+    box-shadow: 0px 0px 20px 20px #00000013;
     border-radius: 6px;
     display: none;
+    animation: bar-animation .6s ease ;
+    transition: all .2s;
+    z-index: 999;
+}
+@keyframes bar-animation{
+    from{
+        top: 40px;
+    }
 }
 .bar-main{
     width: 100%;
@@ -1829,10 +1861,18 @@ tbody tr td button:hover{
     background-color: #fff;
     border-radius: 6px;
     padding: 20px;
-    border: 1px solid #f1f1f1;
+    /* border: 1px solid #f1f1f1; */
     cursor: default;
-    box-shadow: 0px 12px 30px #cdcdcd;
+    box-shadow: 0px 0px 20px 20px #00000013;
     display: none;
+    animation: mega-animation .6s ease ;
+    transition: all .2s;
+    z-index: 999;
+}
+@keyframes mega-animation{
+    from{
+        top: 60px;
+    }
 }
 .mega-parent{
     display: flex;
@@ -1879,7 +1919,7 @@ tbody tr td button:hover{
     
     margin-top: 70px;
     display: none;
-    z-index: 99999999;
+    z-index: 99;
     position: fixed;
     left: 0;
 }
@@ -1917,6 +1957,8 @@ tbody tr td button:hover{
     top: 35px;
     border-radius: 5px;
     display: none;
+    animation: drop-animation .6s ease ;
+    transition: all .2s;
 }
 .el-parent{
     display: flex;
@@ -1958,6 +2000,8 @@ tbody tr td button:hover{
     left: -5px;
     border-radius: 5px;
     display: none;
+    animation: drop-animation .6s ease ;
+    transition: all .2s;
 }
 .d-item{
     width: 100%;
@@ -1993,6 +2037,9 @@ tbody tr td button:hover{
     background-color: #fff;
     box-shadow: 0px 0px 20px 20px #00000013;
     display: none;
+    border-radius: 5px;
+    animation: drop-animation .6s ease ;
+    transition: all .2s;
 }
 .app-item{
     height: 40px;
@@ -2026,6 +2073,9 @@ tbody tr td button:hover{
     background-color: #fff;
     box-shadow: 0px 0px 20px 20px #00000013;
     display: none;
+    border-radius: 5px;
+    animation: drop-animation .6s ease ;
+    transition: all .2s;
 }
 .com-item{
     height: 40px;
@@ -2059,7 +2109,11 @@ tbody tr td button:hover{
     background-color: #fff;
     box-shadow: 0px 0px 20px 20px #00000013;
     display: none;
+    border-radius: 5px;
+    animation: drop-animation .6s ease ;
+    transition: all .2s;
 }
+
 .ex-item{
     height: 40px;
     width: 100%;
@@ -2088,6 +2142,19 @@ tbody tr td button:hover{
 }
 #horizontal-mobile{
     display: none;
+}
+@keyframes drop-animation{
+    from{
+        top: 25px;
+    }
+    /* to{
+        top: 35px;
+    } */
+}
+@keyframes usa-animation{
+    from{
+        top: 33px;
+    }
 }
 @media(max-width:768px){
     .left{

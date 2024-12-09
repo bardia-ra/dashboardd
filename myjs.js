@@ -174,6 +174,7 @@ document.querySelector('.bar').addEventListener('click', function (){
     document.querySelector('.left-min').style.display="block";
     document.querySelector('.right').style.width="96%";
     document.querySelector('.nav').style.width="96%";
+    document.querySelector('.setting').style.right="0";
 });
 
 document.querySelector('.bar-mobile').addEventListener('click', function (){
