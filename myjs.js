@@ -59,7 +59,7 @@ document.addEventListener('click', function(s){
 });
 const bardia=addEventListener('DOMContentLoaded',()=>{
     let load=document.querySelector('.loadpage');
-    // load.style.display="none";
+    load.style.display="none";
 
 })
     // document.getElementById('close-btnn').addEventListener('click', function(){
