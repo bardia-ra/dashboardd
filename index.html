@@ -3,18 +3,22 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" type="icon" href="img/logo.a0143fa8ed5f53bf9ab4425b9a374176.svg">
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-      <title>Document</title>
+      <title>Admin | Dashboard</title>
    </head>
    <body>
+      <!-- loading page start -->
       <div class="loadpage">
          <span class="loaderr"></span>
       </div>
+      <!-- loading page end -->
+
+      <!-- popup start -->
       <div class="popup">
-         <div class="close-btn">
+         <div class="close-btnn">
             <button id="close-btn" onclick="btnn()">
             &times;
             </button>
@@ -38,13 +42,16 @@
             </div>
          </div>
       </div>
+      <!-- popup end -->
+
+      <!-- setting start -->
       <li id="set" class="setting">
          <i class="fa-solid fa-gear fa-spin fa-lg"></i>
          <div class="set-menu">
             <div class="set-title">
                <h2>Setting</h2>
-               <button id="close-btnn">
-               <i class="close-btn fa-solid fa-circle-xmark"></i>
+               <button class="set-close-btn">
+               <i class="set-close fa-solid fa-circle-xmark"></i>
                </button>
             </div>
             <div class="set-option">
@@ -68,22 +75,22 @@
                <div class="set-item">
                   <button class="set-butt-1" id="fluid">Fluid</button>
                   <button class="set-butt-2" id="boxed">Boxed</button>
-                  <button class="set-butt-3" id="Scrollable">Scrollable</button>
+                  <button class="set-butt-3" id="scrollable">Scrollable</button>
                </div>
             </div>
             <div class="set-option">
                <h3>Topbar Theme</h3>
                <div class="set-item">
-                  <button class="set-butt-1">Light</button>
-                  <button class="set-butt-2">Dark</button>
+                  <button class="set-butt-1" id="light-2">Light</button>
+                  <button class="set-butt-2" id="dark-2">Dark</button>
                </div>
             </div>
             <div class="set-option">
                <h3>Left Sidebar Options</h3>
                <div class="set-item">
-                  <button class="set-butt-1">Default</button>
-                  <button class="set-butt-2">Compact</button>
-                  <button class="set-butt-3">icon</button>
+                  <button class="set-butt-1" id="def">Default</button>
+                  <button class="set-butt-2" id="compact">Compact</button>
+                  <button class="set-butt-3" id="icon-btn">icon</button>
                </div>
             </div>
             <div class="set-option">
@@ -107,7 +114,12 @@
             </div>
          </div>
       </li>
-      <main class="main" id="main-blur">
+      <!-- setting end -->
+
+      <!-- main start -->
+      <main class="main">
+
+         <!-- left mini start -->
          <div class="left-min">
             <div class="min-icon">
                <img class="img-left" src="img/left-logo-mobile.png" alt="">
@@ -179,182 +191,11 @@
                <i class="fa-solid fa-sitemap"></i>
             </div>
          </div>
-         <div class="left-mobile">
-            <div class="left-logo">
-               <img src="img/left-logo.png" alt="">
-            </div>
-            <div class="category" style="overflow: auto;">
-               <div class="menu">
-                  <h3>MENU</h3>
-                  <div class="menu-inside">
-                     <div class="menu-left">
-                        <i class="fa-duotone fa-solid fa-house-user"></i>
-                        <a href="">Dashboard</a>
-                     </div>
-                     <i class="fa-solid fa-angle-down"></i>
-                  </div>
-               </div>
-               <div class="apps">
-                  <h3>APPS</h3>
-                  <div class="apps-inside">
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-calendar-days"></i>
-                           <a href="">Calender</a>
-                        </div>
-                     </div>
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-comments"></i>
-                           <a href="">Chat</a>
-                        </div>
-                     </div>
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-file-lines"></i>
-                           <a href="">File Manager</a>
-                        </div>
-                     </div>
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-store"></i>
-                           <a href="">Ecommerce</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-bitcoin-sign"></i>
-                           <a href="">Crypto</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-envelope"></i>
-                           <a href="">Email</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-note-sticky"></i>
-                           <a href="">Invoice</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-briefcase"></i>
-                           <a href="">Projects</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-clipboard-check"></i>
-                           <a href="">Tasks</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-address-book"></i>
-                           <a href="">Contacts</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-file"></i>
-                           <a href="">Blog</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="apps-left col-l">
-                           <i class="fa-solid fa-suitcase"></i>
-                           <a href="">Jobs</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                  </div>
-               </div>
-               <div class="pages">
-                  <h3>PAGES</h3>
-                  <div class="page-inside">
-                     <div class="left-col">
-                        <div class="page-left col-l">
-                           <i class="fa-solid fa-circle-user"></i>
-                           <a href="">Authentication</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="page-left col-l">
-                           <i class="fa-solid fa-file-lines"></i>
-                           <a href="">Utility</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                  </div>
-               </div>
-               <div class="comp">
-                  <h3>COMPONENTS</h3>
-                  <div class="comp-inside">
-                     <div class="left-col">
-                        <div class="comp-left col-l">
-                           <i class="fa-solid fa-circle-half-stroke"></i>
-                           <a href="">UI Element</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="comp-left col-l">
-                           <i class="fa-solid fa-eraser"></i>
-                           <a href="">Forms</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="comp-left col-l">
-                           <i class="fa-solid fa-list-ul"></i>
-                           <a href="">Tables</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="comp-left col-l">
-                           <i class="fa-solid fa-chart-simple"></i>
-                           <a href="">Charts</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="comp-left col-l">
-                           <i class="fa-solid fa-circle-dot"></i>
-                           <a href="">Icons</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="comp-left col-l">
-                           <i class="fa-solid fa-location-dot"></i>
-                           <a href="">Maps</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                     <div class="left-col">
-                        <div class="comp-left col-l">
-                           <i class="fa-solid fa-sitemap"></i>
-                           <a href="">Multi Level</a>
-                        </div>
-                        <i class="fa-solid fa-angle-down"></i>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+         <!-- left mini end -->
+
+         
+
+         <!-- left start -->
          <div class="left">
             <div class="left-logo">
                <img id="left-img" src="img/left-logo.png" alt="">
@@ -531,8 +372,13 @@
                </div>
             </div>
          </div>
+         <!-- left end -->
+
+         <!-- right or main page start -->
          <div class="right">
             <div class="nav-back"></div>
+
+            <!-- navigation start -->
             <nav class="nav">
                <ul class="nav-left" >
                   <div class="bar-mobile">
@@ -544,6 +390,9 @@
                   <li class="bar">
                      <i class="fa-solid fa-bars"></i>
                   </li>
+                  <div class="horiz-icon">
+                     <img src="img/icon.png" alt="">
+                  </div>
                   <li class="search-parent">
                      <input class="search-bar" type="search" placeholder="Search...">
                      <input class="search-button" type="submit" value="">
@@ -803,6 +652,9 @@
                   </div>
                </ul>
             </nav>
+            <!-- navigation end -->
+            
+            <!-- header start -->
             <div class="header">
                <div class="head-parent">
                   <div class="head-item dash" style="color: #fff;">
@@ -1003,7 +855,11 @@
                   </div>
                </div>
             </div>
+            <!-- header end -->
+
+            <!-- main parent start -->
             <div class="main-parent">
+               <!-- main text start -->
                <div class="main-text">
                   <div class="title-texts">
                      <h2>Dashboard</h2>
@@ -1012,8 +868,12 @@
                      <h3>Dashboard / <span>Dashboard</span></h3>
                   </div>
                </div>
+               <!-- main text end -->
+                <!-- main car 1 start -->
                <div class="main-card-1">
+                  <!-- profile parent start -->
                   <div class="profile-parent">
+                     <!-- profile card start -->
                      <div class="profile profile-1">
                         <div class="prof-1-top">
                            <div class="top-text">
@@ -1050,6 +910,9 @@
                            </div>
                         </div>
                      </div>
+                     <!-- profile card end -->
+
+                     <!-- profile card 2 start -->
                      <div class="profile profile-2">
                         <div class="prof-2-top">
                            <h3>
@@ -1073,8 +936,12 @@
                            <p>We craft digital, graphic and dimensional thinking.</p>
                         </div>
                      </div>
+                     <!-- profile card 2 end -->
                   </div>
+                  <!-- profile parent end -->
+                   <!-- right main start -->
                   <div class="right-main">
+                     <!-- right top start -->
                      <div class="right-top">
                         <div class="right-cards">
                            <div class="card-left">
@@ -1112,6 +979,8 @@
                            </div>
                         </div>
                      </div>
+                     <!-- right top end -->
+                      <!-- right bottom start -->
                      <div class="right-bottom">
                         <div class="email-card">
                            <div class="email-left">
@@ -1125,10 +994,17 @@
                         </div>
                         <div id="chart"></div>
                      </div>
+                     <!-- right botoom end -->
                   </div>
+                  <!-- right main end -->
                </div>
+               <!-- main card 1 end -->
+
+                <!-- main card 2 start -->
                <div class="main-card-2">
+                  <!-- top main start -->
                   <div class="top-main">
+                     <!-- top card 1 start -->
                      <div class="top-card top-card-1">
                         <div class="card-1-top">
                            <p>Social Source</p>
@@ -1167,12 +1043,14 @@
                            </div>
                         </div>
                      </div>
+                     <!-- top card 1 end -->
+
+                     <!-- top card 2 start -->
                      <div class="top-card top-card-2">
                         <div class="card-2-top">
                            <h3>Activity</h3>
                         </div>
                         <div class="card-2-mid">
-                           <!-- <div class="left-line"></div>  -->
                            <div class="mid-left">
                               <div class="left-icon">
                                  <i class="fa-regular fa-circle-right"></i>
@@ -1232,6 +1110,9 @@
                            <button>View more &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                      </div>
+                     <!-- top card 2 end -->
+
+                     <!-- top card 3 start -->
                      <div class="top-card top-card-3">
                         <div class="card-3-top">
                            <h3>Top Cities Selling Product</h3>
@@ -1283,8 +1164,12 @@
                            </div>
                         </div>
                      </div>
+                     <!-- top card 3 end -->
                   </div>
+                  <!-- top main end -->
+                   <!-- bottom main start -->
                   <div class="bottom-main">
+                     <!-- bottom card start -->
                      <div class="bottom-card">
                         <div class="table-title">
                            <h3>Latest Transaction</h3>
@@ -1504,9 +1389,15 @@
                            </table>
                         </div>
                      </div>
+                     <!-- bottom card end -->
                   </div>
+                  <!-- bottom main end -->
                </div>
+               <!-- main card 2 end -->
             </div>
+            <!-- main parent end -->
+
+            <!-- footer start -->
             <div class="footerr">
                <div class="footer-left">
                   <p>2024 © Bardia.</p>
@@ -1515,9 +1406,14 @@
                   <p>Design & Develop by Bardia</p>
                </div>
             </div>
+            <!-- footer end -->
          </div>
+         <!-- right or main page end -->
+
       </main>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- main end -->
+
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
       <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
       <script src="charts.js"></script>
       <script src="myjs.js"></script>
